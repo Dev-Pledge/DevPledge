@@ -23,14 +23,24 @@ class User extends DbBase {
 	 * @param null $id
 	 * @param null $email
 	 * @param null $password
+	 * @param null $gitHubId
+	 * @param null $facebookId
 	 *
 	 * @throws \Resources\Db\DbException
 	 */
-	public function __construct( $id = null, $email = null, $password = null ) {
+	public function __construct( $id = null, $email = null, $password = null, $gitHubId = null, $facebookId = null ) {
 		$this->setDbTable( 'users' )
 		     ->setDbPrimaryColumn( 'user_id' );
 		if ( isset( $email ) && isset( $password ) ) {
 			$this->getUserByEmailPassword( $email, $password );
+		} else if ( isset( $gitHubId ) ) {
+			/**
+			 * TODO git hub integration
+			 */
+		} else if ( isset( $facebookId ) ) {
+			/**
+			 * TODO facebook integration
+			 */
 		} else {
 			parent::__construct( $id );
 		}
