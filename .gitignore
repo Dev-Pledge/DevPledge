@@ -1,0 +1,18 @@
+syntax: glob
+nbproject/project.xml
+nbproject/private/private.properties
+nbproject/project.properties
+NB_COMPARE.php
+vendor/subtech/coreg-api/.hgtags
+modulus_db_config.php
+*.DS_Store
+syntax: regexp
+nbproject/*
+.idea/*
+.idea/deployment.xml
+.idea/webServers.xml
+dev_vendor/
+sentry.php
+modulus_async_config.php
+JsonSetup/*
+.git/*
