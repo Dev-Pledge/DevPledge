@@ -60,7 +60,7 @@ _______
 problem_id
 user_id
 organisation_id
-name
+title
 description
 specification
 active_datetime
@@ -147,8 +147,7 @@ modified
 
 solutions
 _________
-
-submission_id
+solution_id
 user_id
 problem_id
 open_source_location
@@ -156,16 +155,34 @@ data
 created
 modified
 
-
-solution_groups
+(Only for the life of the problem)
+problem_solution_groups
 _______________
-solution_group_id
+problem_solution_group_id
 problem_id
 user_id
 name
 created
 modified
 
+
+user_problem_solution_group_maps
+________________________
+user_problem_solution_group_map_id
+problem_solution_group_id
+user_id
+created
+modified
+
+(Permanent group)
+solution_groups
+_______________
+solution_group_id
+user_id
+name
+description
+created
+modified
 
 user_solution_group_maps
 ________________________
@@ -241,9 +258,9 @@ data
 created
 modified
 
+
 connect_user_maps
 ______________
-
 connect_user_map_id
 user_id
 follow_user_id
@@ -255,7 +272,6 @@ modified
 
 follow_user_maps
 ______________
-
 follow_user_map_id
 user_id
 follow_user_id
@@ -265,7 +281,6 @@ modified
 
 follow_organisation_maps
 ____________________
-
 follow_organisation_map_id
 user_id
 follow_organisation_id
@@ -322,4 +337,7 @@ from_user_id
 organisation_id
 points
 created
-Modified
+modified
+
+
+
