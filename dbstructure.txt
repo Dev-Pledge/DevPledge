@@ -10,10 +10,19 @@ email
 dob
 git_hub_id
 facebook_id
+google_id
 developer
-api_key
 password
 data
+created
+modified
+
+api_keys
+_______
+api_key_id
+api_key
+user_id
+organisation_id
 created
 modified
 
@@ -22,7 +31,6 @@ organisations
 _________
 organisation_id
 name
-api_key
 data
 created
 modified
@@ -47,26 +55,27 @@ data
 created
 
 
-projects
-_____
-project_id
+problems
+_______
+problem_id
 user_id
+organisation_id
 name
 description
-spec
+specification
 active_datetime
-deadline_datetime
-open_source_location
+deadline_datetime (optional)
+open_source_location (GitHub)
 deleted
 data
 created
 modified
 
 
-project_change_logs
+problem_change_logs
 _______________
-project_change_log_id
-project_id
+problem_change_log_id
+problem_id
 user_id
 name
 description
@@ -83,16 +92,17 @@ pledges
 ______
 pledge_id
 user_id
-project_id
 organisation_id
-kudo_points
+problem_id
+kudos_points
 value
 currency
+comment (optional)
 data
 created
 modified
 
-
+(Programming)
 languages
 ________
 language_id
@@ -107,7 +117,6 @@ modified
 frameworks
 ________
 framework_id
-user_id :null or int
 name
 description
 example
@@ -116,102 +125,103 @@ created
 modified
 
 
-project_language_maps
+problem_language_maps
 ___________________
-project_language_map_id
-project_id
+problem_language_map_id
+problem_id
 language_id
 optional
 created
 modified
 
 
-project_framework_maps
+problem_framework_maps
 ___________________
-project_language_map_id
-project_id
+problem_language_map_id
+problem_id
 framework_id
 optional
 created
 modified
 
 
-contenders
+solutions
 _________
 
-contender_id
+submission_id
 user_id
-project_id
+problem_id
 open_source_location
 data
 created
 modified
 
-contender_groups
+
+solution_groups
 _______________
-contender_group_id
-project_id
+solution_group_id
+problem_id
 user_id
 name
 created
 modified
 
 
-user_contender_group_maps
+user_solution_group_maps
 ________________________
-user_contender_group_map_id
-contender_group_id
+user_solution_group_map_id
+solution_group_id
 user_id
 created
 modified
 
 
-project_like_maps
+problem_like_maps
 ______________
-project_like_map
-project_id
+problem_like_map
+problem_id
 user_id
-type (like | love | use)
+type ( yes | no )
 created
 modified
 
 
-contender_like_maps
+solution_like_maps
 _________________
-contender_like_map
-contender_id
+solution_like_map
+solution_id
 user_id
-type
+type ( yes | no )
 created
 modified
 
 
 organisation_like_maps
-______________
+___________________
 organisation_like_map
 organisation_id
 user_id
-type
+type ( yes | no )
 created
 modified
 
 
-project_comments
+problem_comments
 _______________
-project_comment_id
+problem_comment_id
 user_id
-project_id
+problem_id
 comment
 reply_comment_id
 created
 modified
 
 
-project_comment_like_maps
+problem_comment_like_maps
 _______________________
-project_comment_like_map_id
+problem_comment_like_map_id
 user_id
-project_id
+problem_id
 type
 created
 modified
@@ -221,7 +231,7 @@ payments
 ________
 payment_id
 user_id
-contender_id
+solution_id
 from_user_id
 from_organiser_id
 value
@@ -229,7 +239,7 @@ currency
 paid
 data
 created
-Modified
+modified
 
 connect_user_maps
 ______________
@@ -240,7 +250,7 @@ follow_user_id
 block
 data
 created
-Modified
+modified
 
 
 follow_user_maps
@@ -297,16 +307,15 @@ modified
 feature_maps
 ___________
 feature_map_id
-project_id
-contender_id
+problem_id
+solution_id
 user_id
 comment_id
-Position
+position
 
 
 kudos
 _____
-
 kudos_id
 user_id
 from_user_id
@@ -314,7 +323,3 @@ organisation_id
 points
 created
 Modified
-
-
-
-
