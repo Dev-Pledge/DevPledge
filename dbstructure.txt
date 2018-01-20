@@ -148,6 +148,8 @@ modified
 solutions
 _________
 solution_id
+problem_solution_group_id
+solution_group_id
 user_id
 problem_id
 open_source_location
