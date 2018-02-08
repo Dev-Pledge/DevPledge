@@ -3,5 +3,8 @@
         "nikic/fast-route": "^1.2",
         "jrsaunders/giraffe": "^1.0",
         "tomwright/extended-pdo": "^1.0"
+    },
+    "require-dev": {
+        "eaglewu/swoole-ide-helper": "dev-master"
     }
 }

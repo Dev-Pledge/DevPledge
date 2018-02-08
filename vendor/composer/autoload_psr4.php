@@ -10,6 +10,7 @@ return array(
     'Webmozart\\Assert\\' => array($vendorDir . '/webmozart/assert/src'),
     'TomWright\\Singleton\\' => array($vendorDir . '/tomwright/singleton/src'),
     'TomWright\\Database\\ExtendedPDO\\' => array($vendorDir . '/tomwright/extended-pdo/src'),
+    'Swoole\\' => array($vendorDir . '/eaglewu/swoole-ide-helper/src'),
     'Giraffe\\' => array($vendorDir . '/jrsaunders/giraffe/src'),
     'FastRoute\\' => array($vendorDir . '/nikic/fast-route/src'),
     'Doctrine\\Instantiator\\' => array($vendorDir . '/doctrine/instantiator/src/Doctrine/Instantiator'),

@@ -25,6 +25,10 @@ class ComposerStaticInitd5ce477c798403feed8fb8d60deb867e
             'TomWright\\Singleton\\' => 20,
             'TomWright\\Database\\ExtendedPDO\\' => 31,
         ),
+        'S' => 
+        array (
+            'Swoole\\' => 7,
+        ),
         'G' => 
         array (
             'Giraffe\\' => 8,
@@ -58,6 +62,10 @@ class ComposerStaticInitd5ce477c798403feed8fb8d60deb867e
         'TomWright\\Database\\ExtendedPDO\\' => 
         array (
             0 => __DIR__ . '/..' . '/tomwright/extended-pdo/src',
+        ),
+        'Swoole\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/eaglewu/swoole-ide-helper/src',
         ),
         'Giraffe\\' => 
         array (
