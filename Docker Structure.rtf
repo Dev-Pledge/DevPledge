@@ -1,0 +1,79 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf200
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww33400\viewh21000\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 DEVPLEDGE SETUP\
+\
+\
+DEVELOPMENT\
+\
+	- SENTRY\
+ 		- Use your own dev sentry container\
+		- sentry\
+	\
+	- NGINX\
+		- vhosts\
+			- errors.devpledge.dev -> your internal sentry on your Mac\
+			- api.devpledge.dev\
+			- auth.devpledge.dev\
+			- feed.devpledge.dev\
+			- feed.devpledge.dev:5101\
+\
+	- API\
+		- containers\
+			- api (phpfpm)\
+			- api-mysql (mysql)	\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 	- AUTH\
+		- containers\
+			- auth (phpfpm)\
+			- auth-mysql (mysql)\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 		\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 	- FEED\
+		- containers\
+			- feed (phpfpm)\
+			- feed (mysql)\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+PRODUCTION\
+\
+	- SENTRY\
+		- Use DevPledge Sentry\
+		- sentry\
+	\
+	- NGINX\
+		- vhosts\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 			- errors.devpledge.com\
+			- api.devpledge.com\
+			- auth.devpledge.com\
+			- feed.devpledge.com\
+			- feed.devpledge.com:5101\
+\
+	- API\
+		- containers\
+			- api (phpfpm)\
+			- api-mysql (mysql)	\
+\
+	- AUTH\
+		- containers\
+			- auth (phpfpm)\
+			- auth-mysql (mysql)\
+		\
+	- FEED\
+		- containers\
+			- feed (phpfpm)\
+			- feed (mysql)\
+\
+	\
+\
+	\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 		\
+}
